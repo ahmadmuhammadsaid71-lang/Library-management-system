@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Browse books and services available at Smart Library">
+
+    <title>Books & Services - Smart Library</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Smart Library</h1>
+        </div>
+
+        <!-- Navigation -->
+       <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="sctive">Books & Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h2>Books & Services</h2>
+
+            <p>
+                Explore our collection of academic books and library services.
+            </p>
+        </section>
+
+        <!-- Search -->
+        <section class="book-search">
+            <h2>Find a Book</h2>
+
+            <input
+                type="text"
+                id="bookSearch"
+                placeholder="Search by title, author or category..."
+                onkeyup="searchBooks()"
+            >
+        </section>
+
+        <!-- Book Collection -->
+        <section class="books-section">
+
+            <h2>Available Books</h2>
+
+            <div class="book-container" id="bookContainer">
+
+                <!-- Book 1 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span>WEB</span>
+                    </div>
+
+                    <div class="book-content">
+                        <h3>Web Application Development</h3>
+
+                        <p>
+                            <strong>Author:</strong>
+                            John Smith
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            Computer Science
+                        </p>
+
+                        <p>
+                            Learn the basic principles of designing and
+                            developing websites and web applications.
+                        </p>
+
+                        <span class="available">
+                            Available
+                        </span>
+
+                        <button onclick="toggleDetails('book1')">
+                            View Details
+                        </button>
+
+                        <p id="book1" class="book-details">
+                            This book covers HTML, CSS, JavaScript and
+                            basic web development concepts.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Book 2 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span>PROGRAMMING</span>
+                    </div>
+
+                    <div class="book-content">
+                        <h3>Introduction to Programming</h3>
+
+                        <p>
+                            <strong>Author:</strong>
+                            David Brown
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            Computer Science
+                        </p>
+
+                        <p>
+                            A beginner-friendly introduction to programming
+                            concepts and problem solving.
+                        </p>
+
+                        <span class="available">
+                            Available
+                        </span>
+
+                        <button onclick="toggleDetails('book2')">
+                            View Details
+                        </button>
+
+                        <p id="book2" class="book-details">
+                            Topics include variables, conditions, loops,
+                            functions and basic programming logic.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Book 3 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span>DATABASE</span>
+                    </div>
+
+                    <div class="book-content">
+                        <h3>Database Systems</h3>
+
+                        <p>
+                            <strong>Author:</strong>
+                            Michael Adams
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            Computer Science
+                        </p>
+
+                        <p>
+                            Learn about databases, data organization and
+                            basic database management concepts.
+                        </p>
+
+                        <span class="available">
+                            Available
+                        </span>
+
+                        <button onclick="toggleDetails('book3')">
+                            View Details
+                        </button>
+
+                        <p id="book3" class="book-details">
+                            The book introduces tables, records, queries
+                            and fundamental database concepts.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Book 4 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span>MATH</span>
+                    </div>
+
+                    <div class="book-content">
+                        <h3>Discrete Mathematics</h3>
+
+                        <p>
+                            <strong>Author:</strong>
+                            Sarah Williams
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            Mathematics
+                        </p>
+
+                        <p>
+                            A useful introduction to mathematical concepts
+                            used in computer science.
+                        </p>
+
+                        <span class="available">
+                            Available
+                        </span>
+
+                        <button onclick="toggleDetails('book4')">
+                            View Details
+                        </button>
+
+                        <p id="book4" class="book-details">
+                            Topics include sets, logic, relations,
+                            functions and mathematical reasoning.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Book 5 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span>STATISTICS</span>
+                    </div>
+
+                    <div class="book-content">
+                        <h3>Basic Statistics</h3>
+
+                        <p>
+                            <strong>Author:</strong>
+                            Robert Johnson
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            Mathematics
+                        </p>
+
+                        <p>
+                            Learn the basic principles of collecting,
+                            presenting and analysing data.
+                        </p>
+
+                        <span class="available">
+                            Available
+                        </span>
+
+                        <button onclick="toggleDetails('book5')">
+                            View Details
+                        </button>
+
+                        <p id="book5" class="book-details">
+                            Includes averages, tables, charts,
+                            probability and basic data analysis.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Book 6 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <span>BUSINESS</span>
+                    </div>
+
+                    <div class="book-content">
+                        <h3>Principles of Business Management</h3>
+
+                        <p>
+                            <strong>Author:</strong>
+                            James Anderson
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            Business
+                        </p>
+
+                        <p>
+                            An introduction to management principles and
+                            organizational practices.
+                        </p>
+
+                        <span class="available">
+                            Available
+                        </span>
+
+                        <button onclick="toggleDetails('book6')">
+                            View Details
+                        </button>
+
+                        <p id="book6" class="book-details">
+                            Covers planning, organizing, leadership,
+                            decision-making and control.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- No Results Message -->
+            <p id="noResults">
+                No books found.
+            </p>
+
+        </section>
+
+        <!-- Library Services -->
+        <section class="services-section">
+
+            <h2>Our Library Services</h2>
+
+            <div class="service-container">
+
+                <article class="service-card">
+                    <h3>📚 Book Borrowing</h3>
+                    <p>
+                        Students can borrow available books according
+                        to library rules.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>🔎 Book Search</h3>
+                    <p>
+                        Search for books by title, author or category.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>📖 Reading Area</h3>
+                    <p>
+                        Use our quiet reading area for studying and research.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Smart Library Management System</p>
+        <p>Designed for CSC 210 Web Application Development</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

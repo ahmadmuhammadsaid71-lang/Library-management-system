@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Library Management System">
+    <title>Smart Library Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Smart Library</h1>
+        </div>
+
+        <!-- Navigation -->
+      <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Books & Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+      </nav>
+   </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Smart Library</h2>
+
+                <p>
+                    Your gateway to knowledge, learning and academic resources.
+                    Explore our collection of books and discover a better way
+                    to learn.
+                </p>
+
+                <button onclick="welcomeUser()">
+                    Welcome Me
+                </button>
+
+                <p id="welcome-message"></p>
+
+                <a href="services.html" class="btn">
+                    Browse Books
+                </a>
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section class="highlights">
+            <h2>Why Use Our Library?</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>📚 Wide Collection</h3>
+                    <p>
+                        Access books from Computer Science, Mathematics,
+                        Business and other academic fields.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🔎 Easy Search</h3>
+                    <p>
+                        Quickly search and filter available books according
+                        to title, author or category.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🎓 Study Environment</h3>
+                    <p>
+                        Enjoy a quiet and suitable environment for reading,
+                        studying and academic research.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Smart Library Management System</p>
+        <p>Designed for CSC 210 Web Application Development</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
